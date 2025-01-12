@@ -1,0 +1,31 @@
+<div class="w-full py-2 bg-gray-200 mx-auto sticky top-0">
+  <div class="w-11/12 md:w-10/12 mx-auto flex items-center justify-between">
+    <a
+      class="flex items-center gap-1 text-2xl font-bold text-primary"
+      routerLink="/"
+    >
+      <img src="../../../assets/getFood.png" alt="GetFlix" class="w-10 h-10" />
+      GetFood
+    </a>
+    <div class="flex items-center gap-12">
+      <ul class="hidden md:flex items-center gap-5 font-medium">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/pricing">Pricing</a></li>
+      </ul>
+      <div class="flex items-center gap-5">
+        <!-- Cart Icon Button -->
+        <button *ngIf="cartService.cart.length > 0">
+          <a routerLink="/cart" class="relative">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p
+              class="bg-primary px-[6px] rounded-full text-white text-xs absolute -top-2 left-2"
+            >
+              {{ cartService.cart.length }}
+            </p>
+          </a>
+        </button>
+        <app-getfoodBtn [btnTitle]="'Order Food'" />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.homeBg {
+  background-image: url("/assets/home-hero-bg.webp");
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
