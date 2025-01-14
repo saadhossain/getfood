@@ -17,7 +17,7 @@
 <!-- Foods Row Starts Here -->
 <section
   *ngIf="foods; else foodsLoading"
-  class="w-11/12 md:w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 my-5"
+  class="w-11/12 md:w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 my-5"
 >
   <ng-container *ngFor="let food of foods">
     <app-foodcard [food]="food" />

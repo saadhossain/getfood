@@ -1,0 +1,29 @@
+<div
+  class="flex items-center relative py-2 md:py-0 border-b-2 border-gray-300 md:border-b-0"
+>
+  <input
+    type="text"
+    [value]="searchStr"
+    placeholder="Search Food..."
+    #searchText
+    class="w-4/5 md:w-72 py-1 px-2 md:py-2 md:px-4 rounded-3xl text-gray-900 focus:outline-none ml-auto"
+  />
+  <div class="flex items-center gap-2 absolute right-0">
+    <!-- Search Reset Button -->
+    <button
+      (click)="handleResetSearch()"
+      *ngIf="searchStr"
+      class="bg-gray-500 px-1 rounded font-medium text-white"
+    >
+      X
+    </button>
+
+    <button
+      type="submit"
+      (click)="handleSearch(searchText.value)"
+      class="bg-primary py-1 px-4 md:py-2 md:px-5 rounded-3xl text-white font-semibold"
+    >
+      Submit
+    </button>
+  </div>
+</div>

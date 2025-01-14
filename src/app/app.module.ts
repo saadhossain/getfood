@@ -10,6 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { FoodDetailsComponent } from './pages/food-details/food-details.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
     FoodcardComponent,
     CartComponent,
     CartItemComponent,
+    FoodDetailsComponent,
+    SearchComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
